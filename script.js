@@ -31,12 +31,12 @@ document.body.appendChild(x);
 
 var q = document.createElement("div");
 q.classList.add('container');
-q.style.backgroundColor='#fff';
+q.style.backgroundColor='#deb887';
 q.style.borderRadius=`25px`;
 
 var q2 = document.createElement("div");
 q2.classList.add('row');
-q2.style.border = '3px solid #fff';
+q2.style.border = '3px solid #deb887';
 q2.style.padding = '5px';
 q2.style.height = 'auto';
 q2.style.fontSize = '40px';
@@ -65,7 +65,7 @@ q2.appendChild(q5);
 var q7 = document.createElement('div');
 q7.setAttribute('class','row');
 q7.classList.add('row');
-q7.style.border = '3px solid #fff';
+q7.style.border = '3px solid #deb887';
 q7.style.padding = '5px';
 q7.style.height = 'auto';
 q7.style.fontSize = '40px';
@@ -82,7 +82,7 @@ q7.appendChild(divide);
 var q8 = document.createElement('div');
 q8.setAttribute('class','row');
 q8.classList.add('row');
-q8.style.border = '3px solid #fff';
+q8.style.border = '3px solid #deb887';
 q8.style.padding = '5px';
 q8.style.height = 'auto';
 q8.style.fontSize = '40px';
@@ -99,7 +99,7 @@ q8.appendChild(subract);
 var q9 = document.createElement('div');
 q9.setAttribute('class','row');
 q9.classList.add('row');
-q9.style.border = '3px solid #fff';
+q9.style.border = '3px solid #deb887';
 q9.style.padding = '5px';
 q9.style.height = 'auto';
 q9.style.fontSize = '40px';
@@ -116,7 +116,7 @@ q9.appendChild(additition);
 var q10 = document.createElement('div');
 q10.setAttribute('class','row');
 q10.classList.add('row');
-q10.style.border = '3px solid #fff';
+q10.style.border = '3px solid #deb887';
 q10.style.padding = '5px';
 q10.style.height = 'auto';
 q10.style.fontSize = '40px';
@@ -135,6 +135,11 @@ q.appendChild(q8);
 q.appendChild(q9);
 q.appendChild(q10);
 document.body.append(q);
+
+
+
+
+
 
 
 
