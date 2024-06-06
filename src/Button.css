@@ -1,0 +1,54 @@
+.button {
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light .button {
+    /* background-color: #fff; */
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.dark .button {
+    /* background-color: #444; */
+    color: #f9f9f9;
+    border: 1px solid #555;
+}
+
+.light .default {
+    background-color: #D2D3DA;
+    color: #333;
+}
+
+.dark .default {
+    background-color: #4E505F;
+    color: #FFFFFF;
+}
+
+.light .side {
+    background-color: #4B5EFC;
+    color: #f9f9f9;
+}
+
+.dark .side {
+    background-color: #4B5EFC;
+    color: #FFFFFF;
+}
+
+.light .num {
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+.dark .num {
+    background-color: #2E2F38;
+    color: #FFFFFF;
+}
+
+.button:active {
+    opacity: 0.7;
+}

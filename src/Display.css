@@ -1,0 +1,15 @@
+.display {
+    font-size: 2em;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    border-radius: 5px;
+    background-color: var(--display-bg);
+    color: var(--display-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.prevInp {
+    color: #a7a7a7;
+    margin-bottom: 2rem;
+}

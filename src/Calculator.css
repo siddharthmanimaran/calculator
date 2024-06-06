@@ -1,0 +1,139 @@
+body.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body.dark {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.calculator {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calculator .header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.button-panel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.toggleCheckbox {
+  display: none;
+}
+
+.toggleContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  border: 3px solid #343434;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #343434;
+  cursor: pointer;
+}
+
+.light .toggleContainer {
+  background: #ffffff;
+  border: 3px solid #ffffff;
+}
+
+.dark .toggleContainer {
+  background: #2E2F38;
+  border: 3px solid #2E2F38;
+}
+
+.toggleContainer::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0%;
+  border-radius: 20px;
+  background: rgb(182, 182, 182);
+  transition: all 0.3s;
+}
+
+.toggleContainer div {
+  padding: 6px;
+  text-align: center;
+  z-index: 1;
+}
+
+.toggleCheckbox:checked+.toggleContainer::before {
+  left: 50%;
+}
+
+.toggleCheckbox:checked+.toggleContainer div:first-child {
+  color: white;
+  transition: color 0.3s;
+}
+
+.toggleCheckbox:checked+.toggleContainer div:last-child {
+  color: #343434;
+  transition: color 0.3s;
+}
+
+.toggleCheckbox+.toggleContainer div:first-child {
+  color: #343434;
+  transition: color 0.3s;
+}
+
+.toggleCheckbox+.toggleContainer div:last-child {
+  color: white;
+  transition: color 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .calculator {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    padding: 10px;
+  }
+
+  .button {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .display {
+    font-size: 1.2em;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .button {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .display {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
